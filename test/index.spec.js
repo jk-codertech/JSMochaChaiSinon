@@ -13,4 +13,14 @@ describe('should check add function', () => {
         const result = add(2)
         expect(result).to.be.eq(2)
     })
+
+    it('should take no arguments and return 0', () => {
+      const result = add()
+      expect(result).to.be.eq(0)  
+    })
+
+    it('should return 0 if arguments are strings', () => {
+        const result = add(2,'hello')
+        expect(result).to.be.eq(0)
+    })
 })
